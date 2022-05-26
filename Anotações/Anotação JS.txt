@@ -1,0 +1,85 @@
+HTML: linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos, tabelas, imagens e até vídeos.
+CSS: linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.
+Javascript: linguagem de programação utilizada para deixar a página com mais movimento, podendo atualizar elementos dinamicamente e lidar melhor com dados enviados e recebidos na página.
+------------------------------------------------------------------------------------------------------
+
+A ferramenta DevTools presente nos navegadores web é de grande ajuda para comunidade de desenvolvedores web, a ponto de serem apelidados carinhosamente de “melhor amiga/o” da pessoa desenvolvedora????
+R: Através dessa ferramenta, conseguimos editar a aplicação em tempo de execução, adicionar ou remover tags HTML, mexer no CSS da página, escrever código JavaScript no console e ver as modificações sem persistência,Diferente do método tradicional para resolver problemas do código fonte que consistia em abrir o código e olhar linha a linha para descobrir o erro, o DevTools apresenta uma maneira mais simples e direta do problema no código, bastando acessar a aba Console que lá estará indicando o tipo e o arquivo onde se encontra o erro.
+
+
+
+Como vimos nesta aula, é possível inserir um arquivo JavaScript em dois locais do documento HTML, dentro da tag head ou da tag body
+Com base nessas informações, devemos colocar o JavaScript dentro da tag body logo antes do seu fechamento, </body>, quando???
+O script depende de elementos do body já carregados pelo navegador, Quando o código JavaScript que vamos adicionar depende de elementos que estão no body, por exemplo um querySelector que espera receber determinado seletor, o local mais apropriado para sua inserção é dentro da tag body e na linha anterior ao fechamento da tag </body>. No head podemos inserir scripts, porém eles não devem ter dependencias de elementos do body, por exemplo uma biblioteca de funcionalidades.
+
+
+O que é uma função?:
+O que é uma função, para que servem, como declará-la e sua sintaxe básica. Além disso, viu que a ordem de execução de um código JavaScript importa, desde a inserção da tag script antes do fechamos da tag </body> no HTML até a ordem do código JavaScript dentro do seu próprio arquivo.
+
+
+Como vimos durante a aula, apesar de utilizarmos o script document.querySelector(seletor) para capturar elementos do HTML individualmente, no Alura MIDI, trocamos ele pelo document.querySelectorAll(seletor)Desta forma, o uso do document.querySelectorAll se justifica por?????
+Utilizamos o document.querySelectorAll() para selecionarmos todos os elementos do seletor desejado, reduzindo a quantidade de repetição de código, que consequentemente, promoverá uma otimização no código em alternativa a repetição.
+
+estrutura de repetição (while = enquanto)
+
+
+Assim como em outras linguagens de programação, o JavaScript também tem o while que é uma das formas de trabalhar com estruturas de repetição.
+Com isto, assinale a alternativa que justifique o uso de uma estrutura de repetição no projeto Alura MIDI????????
+Foi necessário usar o while como estrutura de repetição para auxiliar o acesso a cada elemento dentro da lista de teclas, podendo aplicar a rotina de associar uma função no atributo onclick de cada um destes elementos.
+
+
+A função é o conjunto de instruções de código, que executa uma determinada tarefa, que é utilizada somente quando chamada/invocado, podendo receber parâmetros ou não.Deste modo, o que são os parâmetros em uma função?????Os parâmetros são os nomes que damos a valores que uma função pode receber em sua chamada, que podem ou não ter um valor padrão. Os parâmetros de uma função são como variáveis ficam disponíveis apenas no corpo da função.
+
+
+
+usamos a estrutura de repetição for, para percorrer uma lista de forma mais otimizada, onde em sua declaração criamos a variável contadora da repetição, a condição de interrupção das repetições e a condição de incrementação da variável contadora.
+
+
+
+Percorrendo uma lista:
+Como percorrer uma lista usando a estrutura de repetição while, a criar referências variáveis com let, e como incrementar o valor de uma variável, e criar uma condição para evitar o loop infinito, também conhecemos o atributo length contido nas listas que nos ajudou a obter dinamicamento o valor do tamanho de uma lista.
+
+Função com parâmetros:
+Como declarar e utilizar parâmetros dentro de uma função que criamos, e o que é uma função anônima e o retorno undefined de uma função.
+
+Textos dinâmicos:
+Como criar textos dinâmicos utilizando template string e como acessar as classes de um elemento através do atributo classList.
+
+Repetição otimizada com For:
+Como é a estrutura de repetição for e como ela pode nos ajudar com um código mais limpo, além da forma de incrementar um valor de variável com o operador ++.
+
+
+
+
+Uma empresa de transporte solicitou que você desenvolvesse uma função que entregue todos os pacotes vermelhos no Ceará, e os azuis no Rio de Janeiro.....
+ Utilizando a estrutura condicional ifconseguimos saber o destino correto para entrega dos pacotes a partir das cores
+function entregaPacote(corDoPacote) {
+  if (corDoPacote == 'vermelho') {
+    mandaProCeara();
+  }
+  if (corDoPacote == 'azul') {
+    mandaProRioDeJaneiro();
+  }
+}
+
+
+
+
+Eventos no teclado:
+O que são eventos do teclado e como usá-los: onkeydowne onkeyup. Como adicionar e remover classes em um elemento HTML através do JavaScript, com as funções add e remove do classList.
+
+Condições no código e operadores lógicos:
+O que é o objeto event, como declarar e acessar ele através do parâmetro de uma função atrelada a um evento. A estrutura condicional if e para que ele serve, além de conhecer o operador de igualdade ==, estritamente igual (===), e o operador or (||).
+
+Mais condições:
+A estruturas condicionais if e else juntas. O operador not equals (!=), operador lógico and (&&) e o valor null.
+
+
+
+
+
+
+
+
+
+
